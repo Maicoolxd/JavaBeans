@@ -1,36 +1,43 @@
+package web;
+/*
+Autor: Michael Guamán
+fecha: 05/06/2024
+Descripcion: esta clase permite obtener los datos de la base y la altura
+utilizando metodos gett y sett
+ */
 public class Rectangulo {
-    //declaramos nuestras variables y encapsulamos
-    private int base;
-    private int altura;
+    // Calcular el área de un web.rectangulo
+    // Declaramos las variables y encapsulamos
+    private double base;
+    private double altura;
 
-    //creamos el constructo vacio
-    public Rectangulo(){
+    // Creamos el primer constructor, siempre debe estar vacío
+    public Rectangulo() {}
 
-    }
-    //
-    public Rectangulo(int base, int altura){
-        this.base=base;
-        this.altura=altura;
-    }
-    //metodos gett and sett
-
-
-    public int getBase() {
-        return base;
-    }
-
-    public void setBase(int base) {
+    public Rectangulo(double base, double altura) {
         this.base = base;
+        this.altura = altura;
     }
 
-    public int getAltura() {
+    // Métodos get and set
+    public double getAltura() {
         return altura;
     }
 
-    public void setAltura(int altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
-    
 
+    public double getBase() {
+        return base;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
+    // Generar un método que calcule el área
+    public double getArea() {
+        return this.base * this.altura;
+    }
 }
-
